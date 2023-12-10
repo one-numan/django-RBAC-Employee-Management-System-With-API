@@ -59,9 +59,10 @@ def filter_emp(request):
         if name:
             emps = emps.filter(Q(first_name__icontains=name)
                                | Q(last_name__icontains=name))
-            return render(request, 'all_emp.html', context=fetch_all_emp(emps=emps))
+            if emps:
+                return render(request, 'all_emp.html', context=fetch_all_emp(emps=emps))
         else:
-            return HttpResponse("Something Went Wrong")
+            return HttpResponse("Not Found Please Try Again")
     elif request.method == 'GET':
         return render(request, 'filter_emp.html')
     else:
