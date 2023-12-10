@@ -17,4 +17,4 @@ Empoyee Management System
 ![image](https://github.com/one-numan/django-RBAC-Employee-Management-System-With-API/assets/48924562/cce30f4f-0784-46f3-8383-498dd6e2839e)
 
 
-![image](https://github.com/one-numan/django-RBAC-Employee-Management-System-With-API/assets/48924562/c5eadfe4-dc8f-4f2f-a967-8d209fec82e6)
+![image](https://github.com/one-numan/django-RBAC-Employee-Management-System-With-API/assets/48924562/09925aac-f20c-4d49-a66e-70993612b894)
