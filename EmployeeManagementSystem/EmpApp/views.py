@@ -61,8 +61,9 @@ def filter_emp(request):
                                | Q(last_name__icontains=name))
             if emps:
                 return render(request, 'all_emp.html', context=fetch_all_emp(emps=emps))
+            return HttpResponse("No Entry Found")
         else:
-            return HttpResponse("Not Found Please Try Again")
+            return HttpResponse("Something Went Wrong")
     elif request.method == 'GET':
         return render(request, 'filter_emp.html')
     else:
