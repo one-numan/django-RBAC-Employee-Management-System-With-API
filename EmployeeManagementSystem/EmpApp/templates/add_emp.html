@@ -16,19 +16,27 @@
     <div class="container">
 
         <form class="" action="/add_emp" method="post">
+            {% csrf_token %}
             <label for="first_name" class="form-label">First Name</label>
-            <input type="email" name="first_name" id="first_name">
+            <input type="text" name="first_name" id="first_name">
             <br>
             <label for="last_name" class="form-label">Last Name</label>
-            <input type="email" name="last_name" id="last_name">
+            <input type="text" name="last_name" id="last_name">
             <br>
 
             <label for="salary" class="form-label">Salary</label>
-            <input type="email" name="salary" id="salary">
+            <input type="text" name="salary" id="salary">
             <br>
 
+            <label for="dept" class="form-label">Dept</label>
+            <input type="text" name="dept" id="dept">
+            <br>
+
+            <label for="role" class="form-label">Role</label>
+            <input type="text" name="role" id="role">
+            <br>
             <label for="bonus" class="form-label">Bonus</label>
-            <input type="email" name="bonus" id="bonus">
+            <input type="text" name="bonus" id="bonus">
             <br>
             <button class="btn btn-primary" type="submit">Create New Users</button>
         </form>
