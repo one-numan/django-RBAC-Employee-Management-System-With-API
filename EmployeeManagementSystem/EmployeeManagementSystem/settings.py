@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 EXTERNAL_APPS = [
-    'EmpApp'
+    'EmpApp',
+    'rest_framework'
 ]
 INSTALLED_APPS += EXTERNAL_APPS
 
