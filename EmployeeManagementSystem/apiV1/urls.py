@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from apiV1.views import Employee2ViewSet
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'employee2', Employee2ViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('v101/', include('EmpApp.urls'))
-    path('', include('EmpApp.urls')),
-    path('api/v1/', include('apiV1.urls'))
+    path('', include(router.urls))
 ]
