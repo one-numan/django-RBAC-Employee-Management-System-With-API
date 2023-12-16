@@ -10,4 +10,3 @@ from apiV1.serializers import Employee2Serializer
 class Employee2ViewSet(viewsets.ModelViewSet):
     queryset = Employee2.objects.all()
     serializer_class = Employee2Serializer
-    permission_classes = (AllowAny,)

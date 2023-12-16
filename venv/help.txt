@@ -1,5 +1,5 @@
 For Activate ENV
 windows 11 
--> Set-ExecutionPolicy Unrestricted -Scope Proces  
+-> Set-ExecutionPolicy Unrestricted -Scope Process 
 Virtual ENV 
 -> venv\Scripts\activate    
