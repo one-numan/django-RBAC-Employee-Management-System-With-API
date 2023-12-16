@@ -1,5 +1,5 @@
-import re
-from tkinter import N
+# import re
+# from tkinter import N
 from django.db import models
 
 # Create your models here.
