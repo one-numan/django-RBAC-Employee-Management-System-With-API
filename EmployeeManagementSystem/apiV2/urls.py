@@ -16,11 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
+from apiV2.views import Employee2ViewSet, Role2ViewSet, Department2ViewSet
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'employee3', Employee2ViewSet)
+router.register(r'role3', Role2ViewSet)
+router.register(r'department3', Department2ViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('v101/', include('EmpApp.urls'))
-    path('', include('EmpApp.urls')),
-    path('api/v1/', include('apiV1.urls')),
-    path('api/v2/', include('apiV2.urls'))
+    path('', include(router.urls)),
+    # path('/index', views.index, name='index')
+
 ]

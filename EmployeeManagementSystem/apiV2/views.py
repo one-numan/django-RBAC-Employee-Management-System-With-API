@@ -1,10 +1,12 @@
-# from django.shortcuts import render
+from django.shortcuts import render
 from rest_framework import viewsets
-# from rest_framework.permissions import AllowAny
-from apiV1.models import Employee2, Role2, Department2
-from apiV1.serializers import Employee2Serializer, Role2Serializer, Department2Serializer
 
-# Create your views here.
+from django.http import HttpResponse
+
+from django.apps import apps
+from .serializers import Employee2Serializer, Role2Serializer, Department2Serializer
+from .models import Employee2, Role2, Department2
+# from django.db import models
 
 
 class Employee2ViewSet(viewsets.ModelViewSet):
@@ -20,3 +22,8 @@ class Role2ViewSet(viewsets.ModelViewSet):
 class Department2ViewSet(viewsets.ModelViewSet):
     queryset = Department2.objects.all()
     serializer_class = Department2Serializer
+
+
+def index(request):
+    # objects = MyModel.objects.all()
+    return HttpResponse('Welcome')
