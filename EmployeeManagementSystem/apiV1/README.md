@@ -17,27 +17,27 @@
 
 - What I Built in this Version .
 
-### 1. API
+1. API
 
-  - No Authentication /No Token Required
-  
-  - Perform **CRUD** Operation are :
-  
-  - GET ,
-  
-  - POST,
-  
-  - PUT,
-  
-  - PATCH ,
-  
-  - DELETE
-  
-  - Using DRF ( **Django Rest Framework** )
-  
-  - Provide Better UI for REST's CRUD Operations
+- No Authentication /No Token Required
 
-### 2. Database
+- Perform **CRUD** Operation are :
+
+- GET ,
+
+- POST,
+
+- PUT,
+
+- PATCH ,
+
+- DELETE
+
+- Using DRF ( **Django Rest Framework** )
+
+- Provide Better UI for REST's CRUD Operations
+
+2. Database
 
 - Added a 500+ Employees Data ( Dummy Data )
 
@@ -74,8 +74,8 @@ If your README is long, add a table of contents to make it easy for users to fin
 	- [Django-Rest-Framework GUI](#drf)
 		- [Home Page API Root Page](#homeApi)
 		- [Department 2 API](#depApi)
-		- [Role2 API Page](#rolApi)
-		- [Employee2 's API](#empApi)
+		- [Role2 API Page](#RolApi)
+		- [Employee2 's API](#EmpApi)
 	- [PostMan](#pm)
 		- [GET](#get)
 		- [POST](#post)
@@ -90,12 +90,9 @@ If your README is long, add a table of contents to make it easy for users to fin
   
 
 | Project Name | Employee Management System |
-
 | ------------ | -------------------------- |
-
 | **Version** | 1.1.1 |
 
-  
 
 _Its a Very BASIC REST API WITH NO Authentication_
 
@@ -106,15 +103,10 @@ _Its a Very BASIC REST API WITH NO Authentication_
   
 
 | Modules / Library Name | Version |
-
 | ----------------------------- | ------- |
-
 | Python | 3.10.8 |
-
 | Django | 4.2.8 |
-
 | Django Rest Framework **New** | 3.14.0 |
-
 | Sqlite | 3.44 |
 
   
@@ -164,6 +156,9 @@ Major Steps
   
 
 ## Run this Project
+
+  
+
 <a  name="drf"></a>
 
   
@@ -232,8 +227,3 @@ Major Steps
 <a name='patch'></a>
 
 ![image](https://github.com/one-numan/django-RBAC-Employee-Management-System-With-API/assets/48924562/a5df5e82-29b1-4ce0-aeb6-42c489556aaf)
-
-- DELETE Operations
-  <a name='del'></a>
-![image](https://github.com/one-numan/django-RBAC-Employee-Management-System-With-API/assets/48924562/4f2a17a5-5160-4d97-9daf-5852a59f5743)
-
