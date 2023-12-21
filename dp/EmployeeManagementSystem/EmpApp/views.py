@@ -1,16 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from models import Employee, Role, Department
+from .models import Employee, Role, Department
 from django.db.models import Q
 # Create your views here.
 
 
 def index(request):
-
     return render(request, 'index.html')
 
 
-def fetch_all_emp(emps=dict()):
+def fetch_all_emp(emps=None):
     if not emps:
         emps = Employee.objects.all()
 
@@ -21,7 +20,6 @@ def fetch_all_emp(emps=dict()):
 
 
 def all_emp(request):
-
     return render(request, 'all_emp.html', context=fetch_all_emp())
 
 
