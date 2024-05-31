@@ -23,6 +23,10 @@ def all_emp(request):
     return render(request, 'all_emp.html', context=fetch_all_emp())
 
 
+def js_response(request):
+    return JsonResponse(['data'], safe=False)
+
+
 def add_emp(request):
     if request.method == 'POST':
         first_name = request.POST['first_name']

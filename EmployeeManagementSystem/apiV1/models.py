@@ -28,7 +28,7 @@ class Employee2(models.Model):
     salary = models.IntegerField()
     region = models.CharField(max_length=50)
     # company = models.CharField(max_length=100)
-
+    
     # Primary Keys Defining
     dept = models.ForeignKey(Department2, on_delete=models.CASCADE)
     role = models.ForeignKey(Role2, on_delete=models.CASCADE)
