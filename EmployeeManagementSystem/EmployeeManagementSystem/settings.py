@@ -43,6 +43,7 @@ EXTERNAL_APPS = [
     'EmpApp',
     'apiV1',
     'apiV2',
+    'guiV3',
 ]
 INSTALLED_APPS += EXTERNAL_APPS
 

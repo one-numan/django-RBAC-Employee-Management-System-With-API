@@ -34,7 +34,7 @@ __pycache__/
 *.py[cod]
 
 # Hide App
-guiV3/
+# guiV3/
 
 
 # C extensions
