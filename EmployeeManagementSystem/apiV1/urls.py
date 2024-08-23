@@ -25,6 +25,6 @@ router.register(r'role', Role2ViewSet)
 router.register(r'department', Department2ViewSet)
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('', include(router.urls), name="api_version_first")
 
 ]

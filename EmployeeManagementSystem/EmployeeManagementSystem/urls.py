@@ -19,9 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('v101/', include('EmpApp.urls'))
-    path('', include('EmpApp.urls')),
-    path('api/v1/', include('apiV1.urls')),
-    path('api/v2/', include('apiV2.urls')),
-    path('v3/', include('guiV3.urls'))
+    path('', include('guiV3.urls')),       # Current Redirection
+    path('v01/', include('EmpApp.urls'), name='v0'),  # Version 0.1
+    path('api/v1/', include('apiV1.urls'), name='apiV1'),     # Version 1
+    path('api/v2/', include('apiV2.urls'), name='apiV2'),     # Version 2
+    path('v3/', include('guiV3.urls'), name='v3')          # Version 3
 ]
