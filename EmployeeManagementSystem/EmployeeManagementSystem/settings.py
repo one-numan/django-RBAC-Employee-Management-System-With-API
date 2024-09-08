@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from os.path import join
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-i#jt5^oq7@f!3u57ykt3@ie(k)y&z*5#0*q31vpy2&iu2c^sdg
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost',
-                 'onenuman3.pythonanywhere.com']
+                 'onenuman3.pythonanywhere.com', 'onenuman.com']
 
 # Application definition
 
@@ -124,6 +125,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [join(BASE_DIR, 'staic')]
+
+# Media Files DIR
+MEDIA_URL = '/media/'
+MEDIA_ROOT = (join(BASE_DIR, 'media'))
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
